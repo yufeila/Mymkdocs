@@ -1,0 +1,3358 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../ISEE/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">
+      
+      
+        <link rel="next" href="../../math/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>量子力学 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../themes/css/custom.css">
+    
+      <link rel="stylesheet" href="../../themes/css/simpleLightbox.min.css">
+    
+      <link rel="stylesheet" href="../../themes/css/pied_piper.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              量子力学
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="cyan"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yufeila/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yufeila.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user-guide/writing-your-docs/" class="md-tabs__link">
+          
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/license/" class="md-tabs__link">
+          
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ISEE/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%9B%9E%E5%BF%86%E5%8D%B7%E6%95%B4%E7%90%86/" class="md-tabs__link">
+          
+  
+  ISEE
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Physics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../math/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" class="md-tabs__link">
+          
+  
+  Math
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Common/%E8%8C%B6%E6%96%87%E5%8C%96%E4%B8%8E%E8%8C%B6%E5%81%A5%E5%BA%B7/" class="md-tabs__link">
+          
+  
+  通识
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yufeila/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yufeila.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/writing-your-docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing your docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/styling-your-docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Styling your docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/release-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ISEE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            ISEE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    电子电路基础
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            电子电路基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ISEE/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%9B%9E%E5%BF%86%E5%8D%B7%E6%95%B4%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    电子电路基础回忆卷整理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ISEE/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    回忆卷题目分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    量子力学
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    量子力学
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-21-the-quantum-nature-of-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 21: The Quantum Nature of Light
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 21: The Quantum Nature of Light">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-photoelectric-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Photoelectric Effect
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photonthe-quantum-of-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photon,the Quantum of Light
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photon-momentum-and-compton-scattering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photon Momentum and Compton Scattering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular-momentum-of-photons-and-polarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angular Momentum of Photons and Polarization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-22-matter-wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 22: Matter Wave
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 22: Matter Wave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mystery-of-the-light-wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mystery of the Light Wave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrons-and-matter-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrons and Matter Waves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heisenbergs-uncertainty-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heisenberg’s Uncertainty Principle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-23schroedingers-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 23:Schroedinger's Equation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 23:Schroedinger's Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schroedingers-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schroedinger’s Equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wave-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wave Packet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflection-from-a-potential-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection from a Potential Step
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tunneling-through-a-potential-barrier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tunneling through a Potential Barrier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scanning-tunneling-microscope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scanning Tunneling Microscope
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-24-quantum-wells" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 24: Quantum Wells
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 24: Quantum Wells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-electron-in-an-infinite-potential-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      An Electron in an Infinite Potential Well
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 驻波的形成条件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 半波长的整数倍条件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.振动模式的描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-electron-in-a-finite-potential-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      An Electron in a Finite Potential Well
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-and-three-dimensional-electron-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two- and Three-Dimensional Electron Traps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-25-the-hydrogen-atom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 25 : The Hydrogen Atom
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 25 : The Hydrogen Atom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mystery-of-the-hydrogen-atom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mystery of the Hydrogen Atom
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-bohr-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Bohr Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ground-state-energy-from-uncertainty-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ground-State Energy from Uncertainty Principle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solutions-of-schroedingers-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions of Schroedinger’s Equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      量子力学中的本征态
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 26:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 26:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classical-loop-model-for-electron-orbits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classical Loop Model for Electron Orbits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orbital-angular-momentum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orbital Angular Momentum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spin-angular-momentum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spin Angular Momentum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magnetic-resonance-spin-orbit-coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnetic Resonance Spin-Orbit Coupling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supplement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supplement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Supplement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      态矢和态矢空间
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      动力学变量的测量与平均值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      守恒量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    概率论与数理统计
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            概率论与数理统计
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../math/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概率论与数理统计习题集
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    通识
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            通识
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Common/%E8%8C%B6%E6%96%87%E5%8C%96%E4%B8%8E%E8%8C%B6%E5%81%A5%E5%BA%B7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    茶文化与茶健康
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-21-the-quantum-nature-of-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 21: The Quantum Nature of Light
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 21: The Quantum Nature of Light">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-photoelectric-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Photoelectric Effect
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photonthe-quantum-of-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photon,the Quantum of Light
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photon-momentum-and-compton-scattering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photon Momentum and Compton Scattering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular-momentum-of-photons-and-polarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angular Momentum of Photons and Polarization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-22-matter-wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 22: Matter Wave
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 22: Matter Wave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mystery-of-the-light-wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mystery of the Light Wave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrons-and-matter-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrons and Matter Waves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heisenbergs-uncertainty-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heisenberg’s Uncertainty Principle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-23schroedingers-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 23:Schroedinger's Equation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 23:Schroedinger's Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schroedingers-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schroedinger’s Equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wave-packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wave Packet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflection-from-a-potential-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection from a Potential Step
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tunneling-through-a-potential-barrier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tunneling through a Potential Barrier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scanning-tunneling-microscope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scanning Tunneling Microscope
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-24-quantum-wells" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 24: Quantum Wells
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 24: Quantum Wells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-electron-in-an-infinite-potential-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      An Electron in an Infinite Potential Well
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 驻波的形成条件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 半波长的整数倍条件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.振动模式的描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-electron-in-a-finite-potential-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      An Electron in a Finite Potential Well
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-and-three-dimensional-electron-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two- and Three-Dimensional Electron Traps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-25-the-hydrogen-atom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 25 : The Hydrogen Atom
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 25 : The Hydrogen Atom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mystery-of-the-hydrogen-atom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mystery of the Hydrogen Atom
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-bohr-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Bohr Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ground-state-energy-from-uncertainty-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ground-State Energy from Uncertainty Principle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solutions-of-schroedingers-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions of Schroedinger’s Equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      量子力学中的本征态
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecture 26:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 26:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classical-loop-model-for-electron-orbits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classical Loop Model for Electron Orbits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orbital-angular-momentum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orbital Angular Momentum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spin-angular-momentum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spin Angular Momentum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magnetic-resonance-spin-orbit-coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnetic Resonance Spin-Orbit Coupling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supplement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supplement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Supplement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      态矢和态矢空间
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      动力学变量的测量与平均值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      守恒量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">量子力学<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="lecture-21-the-quantum-nature-of-light">Lecture 21: The Quantum Nature of Light<a class="headerlink" href="#lecture-21-the-quantum-nature-of-light" title="Permanent link">&para;</a></h2>
+<h3 id="the-photoelectric-effect">The Photoelectric Effect<a class="headerlink" href="#the-photoelectric-effect" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734059133927-ace4f1dc-339b-4184-a08d-a57e63cb68fd.png" /></p>
+<ol>
+<li><strong>Stop Potential :</strong><img alt="img" src="https://cdn.nlark.com/yuque/__latex/7a2ccaf471c2e2ec64f98314a353b0fe.svg" /></li>
+<li><strong>the kinetic energy of these most energetic electrons</strong>  <img alt="img" src="https://cdn.nlark.com/yuque/__latex/6cff3fd9adcfbb22408fa052d3c74642.svg" /></li>
+<li><strong>work function</strong> <img alt="img" src="https://cdn.nlark.com/yuque/__latex/a36915ecf0b5605493f5aeaf1480a9ac.svg" /><strong>:  To just escape from the target, an electron must pick up a certain minimum energy W (逸出功) ,由材料性质决定</strong></li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/0fab060e52b529bcaa47ac27023438b1.svg" />， <img alt="img" src="https://cdn.nlark.com/yuque/__latex/bba1acbe34c22ea708705ff00cfdcfdf.svg" /></li>
+</ol>
+<h3 id="photonthe-quantum-of-light">Photon,the Quantum of Light<a class="headerlink" href="#photonthe-quantum-of-light" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/2565c421b5ed73423ad99ee836fcc3b0.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/8706ecdb591670c7922408819654ce62.svg" /></p>
+<h3 id="photon-momentum-and-compton-scattering">Photon Momentum and Compton Scattering<a class="headerlink" href="#photon-momentum-and-compton-scattering" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>photon</p>
+</li>
+<li>
+<p>energy <img alt="img" src="https://cdn.nlark.com/yuque/__latex/24be5943c6c2088bc7c458ff90b1c28e.svg" /></p>
+</li>
+<li>velocity <img alt="img" src="https://cdn.nlark.com/yuque/__latex/b891664b42113aee13f0bac25eb998e5.svg" /></li>
+<li>
+<p>mass <img alt="img" src="https://cdn.nlark.com/yuque/__latex/01c8eba5d94768c1a482ddddc709fa64.svg" /></p>
+</li>
+<li>
+<p>Einstein extended his concept of photons by <strong>proposing that a quantum of light has linear momentum</strong>  </p>
+</li>
+<li>
+<p>the theory of relativity connect Energy with momentum<img alt="img" src="https://cdn.nlark.com/yuque/__latex/de9a845077c09a215ec0b9bac9a03a44.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/5dadad78892c60574420b9d97a16cf71.svg" /></p>
+</li>
+<li>
+<p>Compton Scattering</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734003749356-c3b4fdad-7273-466f-b0a0-8f8a8cb1c686.png" /></p>
+<p>散射后的X射线波长分布显示两个显著的强度峰。</p>
+<ul>
+<li><strong>第一个峰</strong>：仍然位于原始入射波长 λ。</li>
+<li><strong>第二个峰</strong>：位于一个更长波长的值 λ'，其与 λ 的差值为 Δλ（称为康普顿位移，Compton shift）。</li>
+<li><strong>康普顿散射的物理推导:</strong></li>
+</ul>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734003967702-822593ca-9875-48b5-a7e5-a8e139efaa61.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734003982695-a8b90504-6c94-4388-9b95-114c2c583329.png" /></p>
+<p>​                                           <img alt="img" src="https://cdn.nlark.com/yuque/__latex/5c675adb8158a512f759d00e3d2a625e.svg" /></p>
+<p>​                                    <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734005512158-897dd76b-b2dd-49fa-ba16-5177c9282f27.png" /></p>
+<ul>
+<li>定义康普顿波长<img alt="img" src="https://cdn.nlark.com/yuque/__latex/9ca0d29eba66472ae12323a91dfb0430.svg" />, Its value depends on the mass m of the particle from which the X rays scatter.  （波长只与被碰撞粒子有关）</li>
+</ul>
+<p>相对论质量：描述运动粒子的质量，<img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734004144312-b43980bc-447b-4970-a11c-9f99aa4831a8.png" /></p>
+<p>相对论能量:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a5d47087227e4f70750c03acfbf33164.svg" /></p>
+<p>相对论动量:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/b5c7ddd1ec5ed772828bb02ed8d0f09e.svg" /></p>
+<p>相对论能量与动量关系关系:<img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734004184593-ab15248f-7ef4-4317-a74d-94891b821ff9.png" /></p>
+<h3 id="angular-momentum-of-photons-and-polarization">Angular Momentum of Photons and Polarization<a class="headerlink" href="#angular-momentum-of-photons-and-polarization" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>photon also has an intrinsic <strong>spin angular momentum</strong>  </p>
+</li>
+<li>
+<p>自旋角动量要么是<img alt="img" src="https://cdn.nlark.com/yuque/__latex/77e88ef428df272dc09bc8057ed3a465.svg" />,要么是<img alt="img" src="https://cdn.nlark.com/yuque/__latex/3235594700aae76673669860a219a7bc.svg" />,表示right-    or    left-  hanedness， 自旋角动量与光的偏振状态直接相关，右旋和左旋分别对应右旋圆偏振和左旋圆偏振 。</p>
+</li>
+<li>当带电粒子（如电子）发射或吸收光子时，粒子的能量、线性动量以及角动量都会发生变化。  </li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734006613995-5bb5f8ae-dde5-4021-800d-35cc3972daec.png" /></p>
+<ol>
+<li>关于量子自旋态的理解:</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734006892183-28db4df7-49cb-4feb-8ae6-d92fb3245dfd.png" /></p>
+<p>​               <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734007137964-98616f88-b525-4d85-9671-104a64750ed7.png" /></p>
+<h2 id="lecture-22-matter-wave">Lecture 22: Matter Wave<a class="headerlink" href="#lecture-22-matter-wave" title="Permanent link">&para;</a></h2>
+<h3 id="mystery-of-the-light-wave">Mystery of the Light Wave<a class="headerlink" href="#mystery-of-the-light-wave" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>干涉现象的解释</p>
+</blockquote>
+<p><strong>波动学说</strong></p>
+<ul>
+<li>干涉是<strong>非局部现象</strong>，这意味着它不是发生在某一个特定的点上，而是需要在空间中多个点之间的相互作用。</li>
+<li>在干涉现象中，波的叠加效果（如波峰增强或波谷抵消）需要波在空间中的延展性（非局限于单点）来表现。干涉遵循能量守恒定律</li>
+</ul>
+<p><strong>光子学说</strong></p>
+<ol>
+<li>
+<p>光屏上光子出现的概率可以通过探测器检测，最后可以发现出现概率与相应位置的光强是一一对应的.</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a8adc0a536f3f833ab830e1730b8ff22.svg" />, <img alt="img" src="https://cdn.nlark.com/yuque/__latex/e9c6d230e2682f1803ee8bc37ab73eba.svg" />（<img alt="img" src="https://cdn.nlark.com/yuque/__latex/df53f70d20a6a901dfd6da9f6986b470.svg" />是光强）</p>
+</li>
+<li>
+<p>即便光源很微弱，以至于一次只能发射一个光子，在光屏上仍然呈现干涉条纹</p>
+</li>
+</ol>
+<h3 id="electrons-and-matter-waves">Electrons and Matter Waves<a class="headerlink" href="#electrons-and-matter-waves" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>De Broglie Hypothesis</strong></p>
+</blockquote>
+<p>德布罗意定义了物质的波长(  <strong>de Broglie wavelength</strong>   )</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/e24bb829779228160d1f4699b74ca3de.svg" /></p>
+<p>Electron Diffraction  </p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734009873912-d7640805-0966-4a49-b86a-1801fcf19faa.png" /></p>
+<p>具有相同波长（物质波）的电子和光子(X射线)具有相同的衍射斑</p>
+<blockquote>
+<p><strong>The Interference of Electrons</strong></p>
+</blockquote>
+<ol>
+<li>经典时空观下</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734010075501-cf873630-7fea-4f3d-be27-0123e49514cb.png" /></p>
+<ol>
+<li>量子力学下</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734010570606-6bfb409d-11c9-4716-a593-a321c9acac9d.png" /></p>
+<ol>
+<li>牛顿经典物理学，仅仅将振幅看作的标量，将概率看作标量（振幅）的平方</li>
+<li>在量子力学中，实际观测到的概率<img alt="img" src="https://cdn.nlark.com/yuque/__latex/75b38969fb8bad2bac42515842f6a208.svg" />也是一个标量，描述了粒子出现在某一个位置的可能性，但是它定义了波函数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a4254e2c30b75094b9ccabd5bda217a4.svg" />,并将其看组一个具有振幅和相位含义的复数矢量</li>
+</ol>
+<p>​                                       <img alt="img" src="https://cdn.nlark.com/yuque/__latex/11078b9edb93ad994a053d2b402f560f.svg" />，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8770a5678e47aea03076b15a06ee01d7.svg" /></p>
+<p>​   因此，波函数是的叠加需要对矢量(振幅)叠加，而不是强度相加。</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/d79020d963f4e6b1934b93480fbb9caa.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/221ba6d7d759e1d8ebbd7a6212227957.svg" /></p>
+<h3 id="heisenbergs-uncertainty-principle">Heisenberg’s Uncertainty Principle<a class="headerlink" href="#heisenbergs-uncertainty-principle" title="Permanent link">&para;</a></h3>
+<ol>
+<li>粒子的位置和动量不能被同时精确测量，两者的测量精度之间满足：  </li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734010919311-fcdbb96d-81d1-4d14-8888-b62a603af97a.png" /></p>
+<ul>
+<li><strong>Δx</strong>：粒子位置的不确定性，即粒子可能出现的空间范围。</li>
+<li>
+<p><strong>Δp</strong>：粒子动量的不确定性，即粒子的动量可能变化的范围。</p>
+</li>
+<li>
+<p>要判断电子究竟通过了哪一条缝，必须利用观测手段（例如光子照射）来确定电子的位置。</p>
+</li>
+<li>使用短波长光提高分辨率，可以判断电子经过哪条缝（位置确定性增加）</li>
+<li>为了分辨出电子通过了哪条缝，需要使用波长<img alt="img" src="https://cdn.nlark.com/yuque/__latex/6225aeb4516cbc083fc01cc22ed7c7e2.svg" /> 的光。此时光子的动量 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/9847bf9a266807184d3e27ea3aff850d.svg" />变大，对电子的动量扰动更强。  但会对电子动量造成不可避免的扰动，从而破坏干涉条纹。</li>
+<li>不确定性原理不依赖于测量</li>
+</ul>
+<h2 id="lecture-23schroedingers-equation">Lecture 23:Schroedinger's Equation<a class="headerlink" href="#lecture-23schroedingers-equation" title="Permanent link">&para;</a></h2>
+<h3 id="schroedingers-equation">Schroedinger’s Equation<a class="headerlink" href="#schroedingers-equation" title="Permanent link">&para;</a></h3>
+<ol>
+<li>波函数的表示方式</li>
+<li>
+<p>一维：                                   <img alt="img" src="https://cdn.nlark.com/yuque/__latex/3a242c4e6e0b96d981b76c4ede6a6e1b.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/50b2bf8eed0b8a668d956b0d5c26cdf4.svg" /></p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/ea627f563ac80eea747adef7f7b1bcaf.svg" /></li>
+</ol>
+<hr />
+<p><strong>Classical Particle</strong></p>
+<ol>
+<li>
+<p><strong>Energy :</strong> </p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/9bfeb9dc8116f7c1cad51c88908cf920.svg" />(<img alt="img" src="https://cdn.nlark.com/yuque/__latex/ade64e7c3df5e48b10954003442ee36f.svg" />)</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308045894-2f604103-2748-449e-b762-5ec48fc7cfc8.png" /></p>
+<ol>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/932e6bb012c2191d95613f8dbb70b034.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308072747-c01bd1a6-dae7-4ab1-94cb-c26a5f305add.png" /></p>
+<ol>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/095784e683b07c2f4ef66ea56263ab67.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308138705-d6b4191d-1d33-4faa-829a-ac0cf151c337.png" /></p>
+<ol>
+<li>考虑势能<img alt="img" src="https://cdn.nlark.com/yuque/__latex/dee9ff94b00cec0de8ff95c6d2e41d8a.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308211201-f871ddd2-ae0d-4734-863a-8b1359809e87.png" /></p>
+<p>薛定谔方程（ Schroedinger’s Equation  ）</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308247999-b83d4b9c-ab06-49bf-9760-6918a0ea1da5.png" /></p>
+<ol>
+<li><strong>time-independent Schroedinger’s equation</strong>  :如果我们将波函数的时间与空间域分离,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/6cd80af78da6c1e224617ecf52e1e1f0.svg" />,则薛定谔方程退化为:</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308372357-1cc4b264-bcf7-4b8d-83ea-aae73c57aa7c.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308481721-f6d43c84-bdd1-47bf-a8bc-ac0715f433a1.png" /></p>
+<ol>
+<li>if <img alt="img" src="https://cdn.nlark.com/yuque/__latex/baeebbba2c32bb464eb078337e1037da.svg" />, <img alt="img" src="https://cdn.nlark.com/yuque/__latex/acdbe91ba5b372a9ff365bd695ff39d7.svg" /></li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308569071-4e19a320-832a-49d0-8ba7-74d2ac5e5cfa.png" alt="img" style="zoom: 80%;" /></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308586930-503ccc5e-6df4-4dee-ba26-927f7a34d517.png" alt="img" style="zoom:80%;" /></p>
+<ol>
+<li>Probability density</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/2f34a5f5430cd9685a3a4dc507c463a6.svg" /></p>
+<h3 id="wave-packet">Wave Packet<a class="headerlink" href="#wave-packet" title="Permanent link">&para;</a></h3>
+<ol>
+<li>根据薛定谔方程求出的波的传播速度<img alt="img" src="https://cdn.nlark.com/yuque/__latex/b2a84dc41a99ab0fb92589bb8e1586ec.svg" /></li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734308826443-9647912e-2713-48e4-8e94-ffaa23f03580.png" alt="img" style="zoom:67%;" /></p>
+<ol>
+<li>根据经典力学求出的粒子速度:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/eb36713c45a72b68a2fe3752b411b922.svg" /></li>
+<li>The quantum mechanical wave function travels at half the speed of the particle it is supposed to represent!  </li>
+<li>
+<p><strong>非局域化粒子 ：平面波解</strong><img alt="img" src="https://cdn.nlark.com/yuque/__latex/678b8dca6535fe29bea0c7f971ad40f2.svg" /><strong>：</strong></p>
+</li>
+<li>
+<p>这是薛定谔方程的<strong>定态（stationary）解</strong>，即时间不显性变化的解。</p>
+</li>
+<li>这个解表示量子力学中一个自由粒子<strong>波动性</strong>的行为(<strong>复数形式</strong>)，而不是经典粒子的运动。</li>
+<li><strong>量子自由粒子与经典自由粒子的差异：</strong></li>
+<li>在经典力学中，自由粒子的轨迹是确定的，粒子的位置和速度可以清晰地描述。</li>
+<li>在量子力学中，平面波解描述的是粒子像波一样传播，位置是完全不确定的，只有动量是确定的（动量与波矢 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/14cb784d07a4234356ce44d06a5b8a3c.svg" /> 相关,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/6d914d7d9b4014e679d1ba89bea9a068.svg" />）。<strong>平面波解不可归一化(根据不确定性原理)</strong></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734309193811-ee932976-9762-4639-a75e-039ed646cea0.png" /></p>
+<ol>
+<li>
+<p><strong>局域化粒子(Localized particle) :   在某一有限空间区域内具有高概率被找到的粒子。</strong>   </p>
+</li>
+<li>
+<p><strong>通过多个平面波的线性叠加，形成了一个波包，这个波包在空间上具有有限宽度，粒子的位置概率分布被限制在一定区域。</strong>  </p>
+</li>
+<li><strong>数学化描述（傅里叶逆变换）</strong><img alt="img" src="https://cdn.nlark.com/yuque/__latex/9cca50e07b94f8f3a1104e577aee5ce7.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734309511281-6721b8a8-860a-47b5-88d9-d19ab79c2c82.png" /></p>
+<ol>
+<li>仍然遵循<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8fa4ee2e14b9f6af465888f1a639ca47.svg" /></li>
+</ol>
+<h3 id="reflection-from-a-potential-step">Reflection from a Potential Step<a class="headerlink" href="#reflection-from-a-potential-step" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734309681107-83bb58b5-3e39-4135-97ed-b5d5013bd85b.png" />                   <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734309673831-69a492b5-8c3c-4c9a-8e55-503bc77edd86.png" /></p>
+<ol>
+<li>
+<p>不同区域内薛定谔方程的解:</p>
+</li>
+<li>
+<p>Region 1: <img alt="img" src="https://cdn.nlark.com/yuque/__latex/baeebbba2c32bb464eb078337e1037da.svg" /></p>
+</li>
+<li>Region 2 :<img alt="img" src="https://cdn.nlark.com/yuque/__latex/65689ad4951f216a6ddc2196df5dd49d.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734309753872-32acdaf1-e2c3-44ac-9de7-21217f076ac2.png" /></p>
+<ol>
+<li>利用波函数连续型条件求解A,B,C,D</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734310214127-65246639-e943-4916-809e-f6c8c14d92ee.png" /></p>
+<ol>
+<li>
+<p>反射与透射</p>
+</li>
+<li>
+<p>解波动方程，可以发现，势垒左侧存在两列波，这里的<img alt="img" src="https://cdn.nlark.com/yuque/__latex/f1a472d6ffed222d4f368651c4e23ac7.svg" />都是复数</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734310607133-f3a5dc6b-7b1c-43dc-b4e0-ec4a37c6f8a2.png" /></p>
+<ol>
+<li>定义反射系数R:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/2d2893863bddc877876e4fe69378df8d.svg" />,根据边界条件可以求出R</li>
+<li>定义投射系数:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/df4517129335ccdd3b6f0b3d04d27ed8.svg" /></li>
+<li>但是，如果我们用<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0d531aeddeb0dd8d6751ade81054f722.svg" />定义，则<img alt="img" src="https://cdn.nlark.com/yuque/__latex/b0b497a3f0c886907db7f77bf7753c03.svg" /></li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/eb9f08a28c5bb49ba742edff63f6a0e9.svg" />(if <img alt="img" src="https://cdn.nlark.com/yuque/__latex/df4903bd620e3aa58616bbc1a8799f11.svg" />是实数)</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/e9190b00b2155696fcaf4e1cc373744d.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a770a282bbfa0ae1ec474b7ed311656d.svg" />表述速度，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/711ab476e83a31781df7b73f1d9f09cd.svg" />表示数量，那么它们的乘积正比于电流密度<img alt="img" src="https://cdn.nlark.com/yuque/__latex/308ed96aa201ec8fe47df94d5afafe88.svg" /></p>
+</li>
+<li>
+<p>隧穿效应( Tunneling through a Potential Barrier  )</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734310894569-fd302e21-798d-44ed-b742-b16108b5253b.png" /></p>
+<ol>
+<li>if <img alt="img" src="https://cdn.nlark.com/yuque/__latex/a36c9e7d2aefaca683c9367ce1f08db3.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/df4903bd620e3aa58616bbc1a8799f11.svg" />是虚数，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/3399f593ac6a5ce3de33bdc9971a051a.svg" />(<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a9359fcd0eef30525387b50bca39c0fe.svg" />是实数)，此时，物质波穿透了势垒</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734311037984-116f8063-4a04-4a4a-8666-3a5a12c073db.png" /></p>
+<h3 id="tunneling-through-a-potential-barrier">Tunneling through a Potential Barrier<a class="headerlink" href="#tunneling-through-a-potential-barrier" title="Permanent link">&para;</a></h3>
+<h3 id="scanning-tunneling-microscope">Scanning Tunneling Microscope<a class="headerlink" href="#scanning-tunneling-microscope" title="Permanent link">&para;</a></h3>
+<h2 id="lecture-24-quantum-wells">Lecture 24:  Quantum Wells<a class="headerlink" href="#lecture-24-quantum-wells" title="Permanent link">&para;</a></h2>
+<h3 id="an-electron-in-an-infinite-potential-well">An Electron in an Infinite Potential Well<a class="headerlink" href="#an-electron-in-an-infinite-potential-well" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734311114190-3195eb72-0571-4fe1-8f0a-2cf1d98ccb74.png" /><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734311119655-47569113-eb67-44fc-9717-c7a4a20a5ae6.png" /></p>
+<ol>
+<li>无限深势阱：<img alt="img" src="https://cdn.nlark.com/yuque/__latex/40a1c98d533e8d70609ea442c93fa0b7.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/72e25cdf98f7345ae7dbdf54530f3a50.svg" /></li>
+</ol>
+<p><strong>驻波</strong></p>
+<h3 id="1"><strong>1.</strong> <strong>驻波的形成条件</strong><a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>驻波是通过两端固定的弦（rigid supports）上形成的振动波动。</strong></li>
+<li><strong>两端的固定点是节点（nodes），这些位置的位移始终为零。</strong></li>
+</ul>
+<h3 id="2">2. <strong>半波长的整数倍条件</strong><a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>驻波只能在弦的长度 LLL 等于<strong>半波长的整数倍</strong>时存在。</li>
+<li>数学描述为：</li>
+</ul>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/4c13d7f3c7ba39c0f1d013d0effaed26.svg" /></p>
+<p>其中：</p>
+<ul>
+<li>λ：波长</li>
+<li>n：正整数，表示驻波的<strong>模式数</strong>（对应不同的振动状态）。</li>
+</ul>
+<p>这表示弦只能振动出<strong>离散的波模式</strong>，每个模式对应一个 n。</p>
+<h3 id="3"><strong>3.振动模式的描述</strong><a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>每个 n值对应弦的一个特定的<strong>振动状态</strong>。</li>
+<li>弦上任意位置 x 处的<strong>横向位移</strong>由下式给出：</li>
+</ul>
+<p>​                               <img alt="img" src="https://cdn.nlark.com/yuque/__latex/51eda049eb0f1d8261e8b1a46f7e77c3.svg" /></p>
+<p>其中：</p>
+<ul>
+<li>A：振幅，表示波动的最大位移。</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/35f712e088020289c9689a23f165c715.svg" />：波的相位，取决于 n 和位置 x。</li>
+</ul>
+<p>这种波形表示了弦在不同模式下的驻波图案。</p>
+<p>整数 n由系统的<strong>边界条件</strong>和弦的长度 L 决定，表示弦上允许的驻波模式。对于给定的弦长 L，n 取决于波的波长 λ和频率 f，并表示波的振动阶数或能级数。  </p>
+<ol>
+<li>
+<p>类比驻波，我们可以用驻波的波函数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/258b2df44f1b380a35445220ec8276c1.svg" />描述无线深势阱中的电子</p>
+</li>
+<li>
+<p>A 的确定：归一化</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734311738297-8b0adcf4-65a1-4c67-9cd4-290a0a36c91b.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734311748407-5583fa51-3e04-4e05-a165-7a2bcd14166a.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734311761182-e0df52d9-d828-4dad-a0a7-f2fd12266f72.png" /></p>
+<ol>
+<li>
+<p>势阱中电子的能量</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/22b853959c5dd2485799be5824b76a61.svg" /></p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a495824b78b13974f37208a551b46887.svg" /></li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/162df21521adef3ca86c2ac9017cdfc7.svg" /></li>
+<li>The positive integer n here is the quantum number of the electron’s <strong>quantum state</strong> in the trap  ,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0a2bb3613c5eb2fe105aa356ede0e0e4.svg" />，所以n从1开始。</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734312204798-ba2ec15a-0ffe-408f-b84b-589106890640.png" /></p>
+<ul>
+<li>
+<p>电子跃迁：<img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734312342131-ecc5048c-5828-4ae5-b8d8-5a3906a51789.png" /></p>
+</li>
+<li>
+<p><strong>Wave Functions of the Trapped Electron</strong>  </p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734312533126-d4727f66-93da-48dd-b004-93dc69baeefa.png" /><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734312543898-d1cd295f-e4a7-44ea-a665-7248bbfcea54.png" /></p>
+</li>
+<li>correspondence principle: <strong>At large enough quantum numbers, the predictions of quantum physics merge smoothly with those of classical physics.</strong>  </li>
+</ul>
+<h3 id="an-electron-in-a-finite-potential-well">An Electron in a Finite Potential Well<a class="headerlink" href="#an-electron-in-a-finite-potential-well" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734312639787-93ea424f-8027-49e0-8b09-d648ed505737.png" /></p>
+<ol>
+<li>有限深势阱：U(x)是有限值</li>
+<li>
+<p>薛定谔方程：</p>
+</li>
+<li>
+<p>势阱外(<img alt="img" src="https://cdn.nlark.com/yuque/__latex/c80e33220d19097814494640baa93f7e.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/94fff84a80fc8ec9e6e32f806982423a.svg" />)的薛定谔方程:</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734312700302-24630ca8-b6e0-498d-8d8d-b273473da5e8.png" /></p>
+<ol>
+<li>有限深势阱</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734312945636-1b1257ad-b610-4366-af67-58aca01b0280.png" /></p>
+<ol>
+<li>
+<p>有限深势阱的能量</p>
+</li>
+<li>
+<p>能量离散化：<img alt="img" src="https://cdn.nlark.com/yuque/__latex/1ab4d69203cd0a7111f0773292cd24e8.svg" />,与无限深势阱相比，有限深势阱的能量值会更小，因为波函数可以泄露到势阱外（隧穿）</p>
+</li>
+<li>
+<p>能量阈值<img alt="img" src="https://cdn.nlark.com/yuque/__latex/1e1bc839d6df8f55ed524d359ad454c2.svg" /></p>
+</li>
+<li>
+<p>当电子的能量大于势阱深度<img alt="img" src="https://cdn.nlark.com/yuque/__latex/2feb46af058a4dbcd03f99e56f619871.svg" />时，电子不再被困在势阱内。</p>
+</li>
+<li>在这种情况下，电子的能量连续分布（非量子化），因为电子不再受限于势阱的边界条件。</li>
+</ol>
+<h3 id="two-and-three-dimensional-electron-traps">Two- and Three-Dimensional Electron Traps<a class="headerlink" href="#two-and-three-dimensional-electron-traps" title="Permanent link">&para;</a></h3>
+<p><strong>Schroedinger’s Equation in High Dimensions</strong>  </p>
+<ol>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a495824b78b13974f37208a551b46887.svg" />,We can Generalize Schroedinger's equation to 2D(and similarly to 3D) as</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/8ebbc0dc52fe1c9311255d65734b5700.svg" /><strong>，这可以看作一个特征方程</strong></p>
+<ul>
+<li>
+<p>由于此时的薛定谔方程是一个偏微分方程。</p>
+</li>
+<li>
+<p>通过拆分将偏微分方程转化为常微分方程</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/9df8c4f55171ff8993e67f79bb4c8084.svg" /></p>
+</li>
+</ul>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734316608870-8bb47e8b-e021-44ee-bf47-72ca80c96ae8.png" /></p>
+<ol>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/49f84ff86618a48f1eefe499315d96bf.svg" /></li>
+<li>in a central potential in spherical coordinates:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/7e51d2e8637d52f0f59bd78d5c3994c2.svg" /></li>
+</ol>
+<p><strong>2D &amp; 3D Infinite Potential Wells</strong>  </p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734317413526-4d157e9a-4a5b-4009-ab11-5b8d061ac239.png" /></p>
+<ol>
+<li><strong>Wave Function：</strong></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734317447542-76063651-4b85-4b1e-83ed-b7736e103098.png" /></p>
+<ol>
+<li><strong>The Energy with two quantum numbers</strong> <img alt="img" src="https://cdn.nlark.com/yuque/__latex/018caa48f73b81192ef973a631930046.svg" /> <strong>and</strong> <img alt="img" src="https://cdn.nlark.com/yuque/__latex/8a22acc76dc91acf5cdb05530205125d.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734320815175-ef10f5f5-cec9-441c-86a7-69afcd0613b8.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734320836570-6076b17a-818e-40d8-9cec-d02789f88cda.png" /></p>
+<ol>
+<li><strong>Wave Function :</strong> </li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734320865883-12bbd1be-2e1a-4753-87b7-e86984d0f11d.png" /></p>
+<ol>
+<li><strong>The Energy with three quantum numbers</strong> <img alt="img" src="https://cdn.nlark.com/yuque/__latex/018caa48f73b81192ef973a631930046.svg" /> <strong>,</strong><img alt="img" src="https://cdn.nlark.com/yuque/__latex/8a22acc76dc91acf5cdb05530205125d.svg" /><strong>and</strong> <img alt="img" src="https://cdn.nlark.com/yuque/__latex/d4c020c0d10ec199f8966f1480870f21.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734320924650-90b98850-02eb-4f26-b8d6-c2363b329576.png" /></p>
+<h2 id="lecture-25-the-hydrogen-atom">Lecture 25 : The Hydrogen Atom<a class="headerlink" href="#lecture-25-the-hydrogen-atom" title="Permanent link">&para;</a></h2>
+<h3 id="mystery-of-the-hydrogen-atom">Mystery of the Hydrogen Atom<a class="headerlink" href="#mystery-of-the-hydrogen-atom" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734326131185-6ead2e38-f7ca-4737-8b79-1a3ca509205d.png" /></p>
+<ol>
+<li>
+<p>氢原子的组成: +e proton , -e electron </p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/c281fb839fd667c03c6be3b4243b2f8b.svg" />,可以认为 proton is fixed in place</p>
+</li>
+<li>
+<p><strong>the atom is a fixed potential trap with the electron moving around inside it.</strong>  </p>
+</li>
+<li>
+<p>经典力学：</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734326289270-6dff68fa-4cd8-40f2-b1d7-d7b988c520b5.png" /></p>
+<p>a. 氢原子的势能</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734326300943-53a31de0-769f-4ac4-a47e-66b311b8c478.png" /></p>
+<p>b. the total energy of the electron:</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734326372147-7feccd69-b89f-4d74-91d2-e3b7bacca9fe.png" /></p>
+<p>c. 缺陷 ：电磁辐射失去能量</p>
+<p>d. 轨道： <img alt="img" src="https://cdn.nlark.com/yuque/__latex/97a371edd837c0bf3b7b07572b0deb31.svg" /></p>
+<h3 id="the-bohr-model">The Bohr Model<a class="headerlink" href="#the-bohr-model" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>波尔的两个假设：</p>
+</li>
+<li>
+<p><strong>圆周轨道假设：</strong> The electron in a hydrogen atom orbits the nucleus <strong>in a circle</strong> much like Earth orbits the Sun.  </p>
+</li>
+<li><strong>角动量量子化假设： The magnitude of the angular momentum</strong> <img alt="img" src="https://cdn.nlark.com/yuque/__latex/e01d86f071935f91446dd14b91d78128.svg" /> <strong>of the electron in its orbit is restricted (quantized) to the values</strong>  </li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/b4041cdc16141e18ae3f15fc696d679c.svg" /></p>
+<ol>
+<li>
+<p><strong>局限：</strong></p>
+</li>
+<li>
+<p>只能用来解释氢原子的四条可见光光谱和为什么质子和电子不会碰撞</p>
+</li>
+<li>
+<p><strong>角动量量子化的物理意义</strong></p>
+</li>
+<li>
+<p>de Broglie wavelenth <img alt="img" src="https://cdn.nlark.com/yuque/__latex/e520c061a407db472027709bf3f73290.svg" /> of a free particle with momentum p :<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8a38bffd5612ec61f16025004b1c6a44.svg" /></p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/45df871cf46f494341c4a33928ec229e.svg" /></li>
+<li>
+<p>if <img alt="img" src="https://cdn.nlark.com/yuque/__latex/c4a1cbeb566021f5409c2e3938f8ed10.svg" />,  <img alt="img" src="https://cdn.nlark.com/yuque/__latex/313ee3a55311b4e2d072511eeef33c6d.svg" /></p>
+</li>
+<li>
+<p><strong>The length of the orbit is an integer multiple of  λ</strong>.</p>
+</li>
+<li>
+<p><strong>The phase of the electron wave function returns to the initial value by moving for one cycle of the orbit.</strong>  </p>
+</li>
+<li>
+<p><strong>基于Bohr's model 的分析</strong></p>
+</li>
+<li>
+<p>角动量<strong>:</strong><img alt="img" src="https://cdn.nlark.com/yuque/__latex/44db178ff0d1aa1f95a9bb8ce4617aec.svg" /></p>
+</li>
+<li>速度<strong>:</strong> <img alt="img" src="https://cdn.nlark.com/yuque/__latex/fec739e032feab0253a921a361374f2f.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a574e357b50a9435ffdc58cb41e93ae4.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/3a950e81fb23922c50fcd35fc7a098de.svg" /></p>
+<ol>
+<li>
+<p>轨道半径:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/2a8ade57239c45725e19cef164de561c.svg" />,其中，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/42238a819c19be106bbb6c80be2c2f20.svg" /></p>
+</li>
+<li>
+<p>when <img alt="img" src="https://cdn.nlark.com/yuque/__latex/9aa4144f7afd51b4d27192d382af1d74.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/b32543f3f7061a0e41ccb1fdf8e3f676.svg" />is called <strong>Bohr radius</strong></p>
+</li>
+<li>
+<p>能量: <img alt="img" src="https://cdn.nlark.com/yuque/__latex/7b6e794ec6b043b486c204fdb41efaca.svg" /></p>
+</li>
+<li>
+<p><strong>characteristic energy  (Rydberg)</strong></p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734335037845-93b41c98-6c34-4c80-9e48-aeadbd65b3bf.png" /></p>
+<ol>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/6816cfa5718f9709e5465948062df645.svg" /></p>
+</li>
+<li>
+<p>光量子的吸收和发射</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734335152875-1fc9b8df-12b3-41cd-a0bd-319e7d1bfb12.png" /></p>
+<p>a. for convenience , <img alt="img" src="https://cdn.nlark.com/yuque/__latex/b138ce5a6ffa570ae78d4d5509bdb108.svg" /></p>
+<p>b. <img alt="img" src="https://cdn.nlark.com/yuque/__latex/fd9f53c973658d622476bafc6ae5280b.svg" /></p>
+<ol>
+<li><strong>一些常用的物理学参数</strong></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734335268054-fefa0889-63d0-4492-9531-ef3ddf4ead83.png" /></p>
+<h3 id="ground-state-energy-from-uncertainty-principle">Ground-State Energy from Uncertainty Principle<a class="headerlink" href="#ground-state-energy-from-uncertainty-principle" title="Permanent link">&para;</a></h3>
+<ol>
+<li>海森堡不确定性原理（<strong>动量-位置不确定性原理</strong>）指出，位置的不确定性<img alt="img" src="https://cdn.nlark.com/yuque/__latex/f0cfa50c68d5656f1dffd42ab744585b.svg" /> 和动量的不确定性 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/bc4b4355bace78ca682031446d4ca4f3.svg" /> 之间存在关系：</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/8ef2bb4ce566601dca6950c3d0deed01.svg" /></p>
+<p>其中<img alt="img" src="https://cdn.nlark.com/yuque/__latex/878b47a36b61332f3977db5de31cccaa.svg" />是约化普朗克常数。</p>
+<ol>
+<li>基于不确定性原理的电子能量估算</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734336318270-a61d452d-6ae4-4eca-b644-dcb44194a571.png" /></p>
+<p>​            <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734336362305-0b79f87a-f943-4052-833a-959e8468870c.png" /></p>
+<ol>
+<li>
+<p>海森堡不确定性原理（<strong>能量——时间不确定性原理</strong>）</p>
+</li>
+<li>
+<p>能量和时间的不确定性满足以上关系,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/cf41eaa07432341f26aafa700ad4a3eb.svg" /></p>
+</li>
+<li>
+<p>由于基态能量（或任意定态）是唯一确定的</p>
+</li>
+<li>
+<p>对于定态(<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a65feee8b7177abed016af427ca73259.svg" />),<img alt="img" src="https://cdn.nlark.com/yuque/__latex/39e14014add9327e41e15c2ae8311e09.svg" /></p>
+</li>
+<li>
+<p>而<img alt="img" src="https://cdn.nlark.com/yuque/__latex/39e14014add9327e41e15c2ae8311e09.svg" />本身就表示基态和任何定态的能量是固定的，不存在波动</p>
+</li>
+<li>
+<p>尽管<img alt="img" src="https://cdn.nlark.com/yuque/__latex/eaaecd662a08278cd3141fb509b2c3d9.svg" />, 但是动能和势能本身仍然具有不确定性</p>
+</li>
+<li>
+<p>动能的不确定性由<img alt="img" src="https://cdn.nlark.com/yuque/__latex/bc4b4355bace78ca682031446d4ca4f3.svg" />来描述</p>
+</li>
+<li>
+<p>势能的不确定性由<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a632a9407114c63854cd5ffe12d0be30.svg" />来描述</p>
+</li>
+<li>
+<p>1</p>
+</li>
+</ol>
+<h3 id="solutions-of-schroedingers-equation">Solutions of Schroedinger’s Equation<a class="headerlink" href="#solutions-of-schroedingers-equation" title="Permanent link">&para;</a></h3>
+<p><strong>动力学算符</strong></p>
+<ol>
+<li><strong>动量算符</strong></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734788905083-b5ab618d-64c7-434c-957a-326e10dd2ace.png" /></p>
+<ol>
+<li><strong>动能算符</strong></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734788963093-1bd8c1e3-12c7-4267-9ff4-2f1eed5b3e26.png" /></p>
+<ol>
+<li><strong>动量算符和位置算符的对易关系</strong></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734789007562-d71112de-336e-4e2a-8297-8758ff78e9e5.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734789035327-4ac4316b-f61f-40e3-86a3-31cf81818aba.png" /></p>
+<p>对易关系的理解：</p>
+<p>对易表示两个算子之间的作用顺序可以交换，不对易某种程度上保证了算子之间的独立性，因此遵循不确定性原理</p>
+<ol>
+<li><strong>轨道角动量算符</strong></li>
+</ol>
+<p>经典力学中的角动量<img alt="img" src="https://cdn.nlark.com/yuque/__latex/9833ca9158394aeef59d44f5eb999523.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734789115611-a18ee482-edae-417e-9fea-b241cd8ab0ac.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734789123727-e91c7986-abda-4d27-bea7-91de35f36c67.png" /></p>
+<ol>
+<li><strong>球坐标</strong></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734789146677-5130bc24-9593-4684-a328-b54ebc0ff72d.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734789159788-9211f486-cf23-4d69-a605-f9562f67c78c.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734789167045-b996b65a-15a6-4189-b683-83f5333e3657.png" /></p>
+<p>薛定谔方程的解</p>
+<ol>
+<li>我们需要知道哈密顿算符<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8db9cc99a6547d1da7040c77d5858e87.svg" /></li>
+<li>
+<p>球坐标中的势能项是一个非常简单的项，因此我们采用球坐标，</p>
+</li>
+<li>
+<p>球坐标中的nabla算子:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/d3275011ca566f34b704bdf4bc50e075.svg" /></p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734790004995-da93b562-819c-43d6-b6f3-db420c1bb684.jpeg" /></p>
+<ol>
+<li>由此可见，用薛定谔方程求解出来的<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e4dc1832b93066d3ffd6340147388319.svg" />, 因此，波尔的假设不成立.</li>
+<li>本征态的波函数可以继续拆分<img alt="img" src="https://cdn.nlark.com/yuque/__latex/2ea184c0aa1faa0b0e39063719daa513.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734790453542-8a046e49-051d-46c0-8b4e-b4624729fc82.jpeg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734790540462-33cf7173-601b-40c6-a28e-5c610d4138cd.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/6945e109777fe3fd777e8254f0ec0f0c.svg" />对应角动量,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/df378375e7693bdcf9535661c023c02e.svg" />对应能量，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/4760e2f007e23d820825ba241c47ce3b.svg" />对应磁量子数</p>
+<ol>
+<li>
+<p>不同量子数对应的Y函数——球谐函数(均未归一化)</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/6c43705485f5df0e8f4cf485c0db4277.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/1ee4f9232a4446b5a1b66cecc0d758ac.svg" />(s轨道),可以容纳两个电子</p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/07c5cdce80974fe7e34a548b07c1396f.svg" />（p轨道），可以容纳6个电子，每个轨道可以容纳自旋向上，自旋向下的2个电子。</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734790801403-8545d565-0431-4120-ade7-cb0e977b68be.jpeg" /></p>
+<p>然而在空间直角坐标系中，p轨道（纺锤状）可以表示为，两者形式完全不同，这是什么原因？</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734832642791-c3af620c-e877-4f33-abef-8ef0d6fdea7e.jpeg" /><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734831748131-a0d720a8-ffa3-4986-9166-6e7e75a54258.jpeg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734831783674-56b6aa99-970f-4fb9-804e-b6513b955520.jpeg" /></p>
+<p>因此，空间直角坐标系的一组基是球谐函数3个本征基的线性叠加构造的。</p>
+<ol>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/bb7fd72ca0141607871c477fad90c205.svg" />(d轨道)</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734790824623-fc801f27-53ba-4d69-a36c-a5a85659c298.jpeg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734832668814-30da8a96-1dc7-4fa9-b492-19229bfe7417.jpeg" /></p>
+<ol>
+<li>简并：<strong>简并</strong>（degeneracy）是指多个量子态具有相同的能量。   当多个量子态（例如不同的波函数或量子数组合）对应于同一个能量值时，这些量子态被称为<strong>简并态</strong>。这种现象称为<strong>能级简并</strong>。  </li>
+<li>n（对应R的常微分方程）代表能量。</li>
+</ol>
+<p>概率幅</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734833112150-282a3805-f602-4400-b02d-f2d62e5d8c3e.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734833200676-07198bae-2345-4d42-bb5f-887fba8c3332.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734833212174-9a424afb-4e71-4ea6-bb1c-5e063f6fb6ed.png" /></p>
+<p>a current-carrying coil, a permanent magnet, a rotating sphere of charge, such as Earth, or a subatomic particle   a current-carrying coil, a permanent magnet, a rotating sphere of charge, such as Earth, or a subatomic particle.  </p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/29e4f21d9db77b310e79e8d6166d1218.svg" /> </p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734833277162-7e123fe2-4d21-4d71-b704-45feee289b93.jpeg" /></p>
+<p>Bohr’s Correspondence Principle  : 量子与经典的关系</p>
+<ul>
+<li>图中指出，对于氢原子的状态，当主量子数 nnn 较高且角量子数 l=n−1时，电子的概率密度分布呈现为一个环状。</li>
+<li>这种分布类似于经典物理中描述的电子轨道，同时也符合德布罗意波（de Broglie wave）的特点，即电子的波动性和粒子性兼容。</li>
+<li>图中指出，对于氢原子的状态，当主量子数 nnn 较高且角量子数 l=n−1l = n-1l=n−1 时，电子的概率密度分布呈现为一个环状。</li>
+<li>这种分布类似于经典物理中描述的电子轨道，同时也符合德布罗意波（de Broglie wave）的特点，即电子的波动性和粒子性兼容。</li>
+</ul>
+<h3 id="_2">量子力学中的本征态<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>什么是本征态？</strong></p>
+<p>在量子力学中，本征态是一个满足如下特定关系的量子态：</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/730e85f48963e5c9dbc790bbf94043a4.svg" /></p>
+<ul>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/e97252847c23deab452cfb7462a52eb7.svg" />是某个算子（例如位置算子、动量算子、角动量算子或哈密顿算子）。</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a4254e2c30b75094b9ccabd5bda217a4.svg" /> 是该算子的<strong>本征态</strong>。</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/26fdbf8e53cb0e48da5f4ddd4aaf5a5c.svg" /> 是与该本征态对应的<strong>本征值</strong>，表示该算子在本征态下的测量结果。</li>
+</ul>
+<p>本征态的物理意义</p>
+<p>如果一个系统的波函数是某个算子的本征态，那么对这个算子对应的物理量进行测量时，总会得到固定的测量值，即对应的<strong>本征值</strong>。</p>
+<p>例如：</p>
+<ul>
+<li>若<img alt="img" src="https://cdn.nlark.com/yuque/__latex/6e2b912158e0a81a118781ee1b43dec2.svg" />是动量算子 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/4a032acf928d0c604cf9c7204080a9bc.svg" />的本征态，测得的动量总是对应的本征值。</li>
+<li>若 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/6e2b912158e0a81a118781ee1b43dec2.svg" /> 是哈密顿算子<img alt="img" src="https://cdn.nlark.com/yuque/__latex/485a1aca8fc2121a4611c5b3fc788a5d.svg" /> 的本征态，则对应的本征值 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg" />是系统的能量。</li>
+</ul>
+<p>算子和本征态的关系</p>
+<ul>
+<li>量子力学中，物理可观测量（如位置、动量、能量等）用算子表示。</li>
+<li>
+<p>算子的本征态与本征值描述了这些物理量的可能取值及其对应的量子态。例如：</p>
+</li>
+<li>
+<p>动量算子的本征态是平面波 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/bde5b36a0a6404f714e8c6659b29aa36.svg" />,对应的本征值为 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/efd02088259d43cc6a6f808e0f2b35a6.svg" />。</p>
+</li>
+<li>哈密顿算子的本征态是系统的能量本征态，描述稳定的量子态。</li>
+</ul>
+<p><strong>本征态的叠加</strong></p>
+<p>量子力学中，系统的量子态并不总是某个算子的本征态。一般来说，一个量子态可以表示为多个本征态的<strong>叠加</strong>：</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/03c0795b705163cd6e28f9b64f496e5a.svg" /></p>
+<p>其中 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/ea93015e58205d573c8bdc70425dbdbd.svg" />是某算子的本征态。</p>
+<ul>
+<li>如果对该算子进行测量，结果可能是任意一个本征值，测量结果的概率由叠加系数的平方<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e26d3b8e3bf9f31bfe93d87c28a329e9.svg" /> 决定。</li>
+</ul>
+<p>常见本征态举例</p>
+<ul>
+<li><strong>位置算子本征态</strong>： <img alt="img" src="https://cdn.nlark.com/yuque/__latex/26374604df1f8fb7c1b89262366c8f56.svg" />位置算子的本征态是一个理想的点态（数学上是狄拉克 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/b366096db7f8095739886cce8854eaec.svg" /> 函数）。</li>
+<li>
+<p><strong>动量算子本征态</strong>： <img alt="img" src="https://cdn.nlark.com/yuque/__latex/619dd36f908bb358b1a8f86740e4337f.svg" /> 动量的本征态是平面波形式<img alt="img" src="https://cdn.nlark.com/yuque/__latex/ab6f1ce0da96db2459c959daccd1c0de.svg" />。</p>
+</li>
+<li>
+<p>推导：</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1735480853808-fc51005d-1412-4c11-8532-3823fc7a80f1.jpeg" /></p>
+</li>
+<li>
+<p><strong>哈密顿算子本征态</strong>： 哈密顿算子的本征态对应于系统的能量本征态，例如氢原子的轨道波函数 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/7d448a78d4a7047292e44cb2149d2afa.svg" />。</p>
+</li>
+</ul>
+<p><strong>测量与塌缩</strong></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734836092310-aea75a06-7a77-49ea-a406-42856ba6481e.png" /></p>
+<h2 id="lecture-26">Lecture 26:<a class="headerlink" href="#lecture-26" title="Permanent link">&para;</a></h2>
+<p>产生Magnetic dipole（磁场）的方式：</p>
+<ol>
+<li><strong>a current-carrying coil</strong></li>
+<li><strong>a permanent magnet</strong></li>
+<li><strong>a rotating sphere of charge, such as Earth</strong></li>
+<li><strong>or a subatomic particle.</strong>  </li>
+</ol>
+<p>对于磁的定义，需要从量子力学的角度出发，但是我们在经典体系中对磁的定义从环状电流出发</p>
+<p>波尔对角动量的猜想</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/acb7ae759597bfbb0fc1ac2438c05800.svg" /></p>
+<p>薛定谔方程解释氢原子模型</p>
+<p>(n,m,l)</p>
+<ol>
+<li>The <strong>corresponding energy</strong> only depends on the <strong>principal quantum number</strong> n = 1, 2, 3, . . .. </li>
+<li>The orbital quantum number l = 0, 1, 2, . . . , n − 1 is a measure of the magnitude of the angular momentum of the quantum state. States with l = 0, 1, 2, 3 are called s, p, d, f . </li>
+<li>The orbital magnetic quantum number m = −l, −l + 1, . . . , l − 1, l is related to the space orientation of this angular momentum vector.  </li>
+</ol>
+<h3 id="classical-loop-model-for-electron-orbits">Classical Loop Model for Electron Orbits<a class="headerlink" href="#classical-loop-model-for-electron-orbits" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734834153110-4df6845b-4a4c-4db7-948b-3be4273ac096.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734834164252-acdcb519-e95c-4472-ab34-32360046711f.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734834175735-08cd1d35-0e1e-49df-aea8-18d7203a2b4f.png" /></p>
+<p>The magnitude of the orbital magnetic dipole moment of such a current loop is  </p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734834219634-f4e721cd-bdee-4a44-85b1-0e1efe69118b.png" /></p>
+<p>In the vector formulation  (负电荷，因此逆时针旋转，角动量向上，而电流方向顺时针，磁矩)</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734834251016-fea16f39-e79c-4e28-b840-8750381e0871.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735559564526-aba2dbd8-1562-4405-afde-e4ec56c0ca00.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/d175bd404e2bc89046ab9e08f6926edc.svg" /></p>
+<ol>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/327cab7c761f03df97ad9c71506d0589.svg" />为角速度，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/961a5134ee8fc02a18463914d661edff.svg" />为角动量，它是守恒量(不随时间变化而变化)，故可以从积分号内提出，将结果带入<img alt="img" src="https://cdn.nlark.com/yuque/__latex/ff01c8b900d4e59c9eea6dd7f4d74d3e.svg" />得:</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/1b2f4e0484a66a0eea9a9b86169550ce.svg" /></p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735559746041-c11d74d6-ada6-4466-9337-7424cc0b009e.png" /></li>
+<li>由于角动量以<img alt="img" src="https://cdn.nlark.com/yuque/__latex/878b47a36b61332f3977db5de31cccaa.svg" />为单位，因此可以在角动量的数值上除以<img alt="img" src="https://cdn.nlark.com/yuque/__latex/c4c7dd660c5e2b35d0e927080df9d88f.svg" />使它化为整数，同时在比例系数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/474ae4f3da9ee3af184b2c3caae4d204.svg" />上乘<img alt="img" src="https://cdn.nlark.com/yuque/__latex/878b47a36b61332f3977db5de31cccaa.svg" /></li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/342ce27e84d7a807b2cc3bc48fa19785.svg" />是玻尔磁子，它是电子磁矩的量子化单位</li>
+</ol>
+<h3 id="orbital-angular-momentum">Orbital Angular Momentum<a class="headerlink" href="#orbital-angular-momentum" title="Permanent link">&para;</a></h3>
+<p><strong>动量算子的推导</strong></p>
+<ol>
+<li>平移算子:平移算符<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e2c88db953fc6f96fb74e6528c92c41b.svg" />是描述波函数沿 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg" /> 方向平移的算符。假设波函数 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/6e2b912158e0a81a118781ee1b43dec2.svg" /> 在经过平移 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/a632a9407114c63854cd5ffe12d0be30.svg" /> 后变为 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/770e2de6a66ea605c8193fe7300e75d0.svg" />，则有：</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/849565299565713d99e215cb1f98ef00.svg" /></p>
+<p>这是平移操作的数学表示。</p>
+<ol>
+<li>
+<p>微小平移的泰勒展开</p>
+</li>
+<li>
+<p>对于很小的平移 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/a632a9407114c63854cd5ffe12d0be30.svg" />，波函数可以用泰勒展开表示：</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/2a79e1d4f94c17aaff04ba387f0ca882.svg" /></p>
+<ol>
+<li>因此，有：</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/1fba84538d9d646ac012f51c805ae20b.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/2520ae375d4e2ad0dc1bd5c65481cff9.svg" /></p>
+<ol>
+<li>之前，推导得到</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735095437094-a179b0f8-d84c-4fa2-9ec7-1138e001ba2f.png" /></p>
+<ol>
+<li>
+<p>因此，动量算符和位移算符的关系为</p>
+</li>
+<li>
+<p>将 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/e2c88db953fc6f96fb74e6528c92c41b.svg" /> 进一步写成指数形式（假设平移是无穷小的叠加）：</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/faf2880f9ab04e74412436eb8f8e0efb.svg" /></p>
+<p><strong>角动量算子</strong></p>
+<ol>
+<li>角动量算子的推导</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734834525667-f65a4416-3179-4d8d-95e2-35add3bc9dba.png" /></p>
+<p>将<img alt="img" src="https://cdn.nlark.com/yuque/__latex/848ab609dbddfe926394a7a55cd098ac.svg" />和<img alt="img" src="https://cdn.nlark.com/yuque/__latex/7768f7fb6a013d960f128d2a1f084f01.svg" />用算子替代，可以得到相应的<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e01d86f071935f91446dd14b91d78128.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735096442997-af172254-9ab3-4812-8e1f-9696b2953fd6.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735096469308-1c524f7c-644d-4666-be15-fb15431dddb1.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735096494430-e0f79de4-5f32-4764-9261-7c0788ac4c01.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735096521241-30740a3e-819b-4704-9117-a89074b7a2a9.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735097671152-c4d3b06b-e302-46bd-9a6f-78d2e28f22df.png" /></p>
+<ol>
+<li><strong>角动量算子的对易关系</strong></li>
+</ol>
+<p>​     <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734836436379-82eda839-f70c-4ac3-ac92-7fed18447017.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734836445527-8e9dee75-6d2c-4d15-9e4d-571f640b411d.png" /></p>
+<ol>
+<li>
+<p><strong>角动量与旋转操作符</strong></p>
+</li>
+<li>
+<p>旋转操作符的关系：旋转操作符<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a970f2bd76c69b9f773a26cdd2613cde.svg" /> 表示沿 z 轴旋转一个小角度<img alt="img" src="https://cdn.nlark.com/yuque/__latex/56bab30f4c3579586ea05186a055fe1f.svg" /> 的操作。对于波函数 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/766c52ed6cebad5af7a6d63166f86012.svg" />，旋转后的波函数可以表示为：</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/661d06e7aedff227699d1b3929fcd6c8.svg" /></p>
+<p>这意味着波函数的变量被旋转角度 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/56bab30f4c3579586ea05186a055fe1f.svg" /> 平移</p>
+<ol>
+<li>当旋转角度<img alt="img" src="https://cdn.nlark.com/yuque/__latex/56bab30f4c3579586ea05186a055fe1f.svg" />很小时，可以对波函数进行泰勒展开：</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/88635a157729a3de5876fe505cf4f53f.svg" /></p>
+<p>因此，旋转操作符可以写成：</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/3c0e9730b79d9d8abee5d359c7a1deb1.svg" /></p>
+<ol>
+<li>角动量<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0ae4035dd1e4087ec4dabbe10290126f.svg" /></li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/28e27660a0a44ce1dec08d65dbb8d7e4.svg" /></li>
+</ol>
+<p>用本征态理解</p>
+<ol>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/53dfbc35864bdadaed246d0db0da875f.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/bcc9cff9e939ce634b149875af90e3c1.svg" />对应的本征值<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e3f623c3078ae1663418869bb587b2ca.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/80310f231083204074d2ab356ff6dfd3.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/d2afcdce5f424443e786729c432325ba.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a4254e2c30b75094b9ccabd5bda217a4.svg" />是<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0f67b9b67a11e12022e21429bb9cf74d.svg" />的本征函数</p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/91697dcb0748a2ed189bbd694da67d15.svg" />是<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0f67b9b67a11e12022e21429bb9cf74d.svg" />的本征值</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/0f67b9b67a11e12022e21429bb9cf74d.svg" />与<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a07ee851aafec42a34d262a8055b2b09.svg" />无关，只与<img alt="img" src="https://cdn.nlark.com/yuque/__latex/881403b34487b79bc2ceeeed2c8ea87c.svg" />有关,反应在z轴上的投影</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/72d0efa4e8ffd5b0b6f6173f9bb0317f.svg" /></p>
+</li>
+<li>
+<p>例子</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734836325717-a764fde8-d317-4538-b530-35f89b107a1e.png" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734837011680-0aef178b-20ec-4214-ab14-8ed044da6158.png" /></p>
+<ol>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/995a45a18bb7c8c121acf1fe2ab94292.svg" />与<img alt="img" src="https://cdn.nlark.com/yuque/__latex/49c32d7b080baf5edf584c8aaa0cfe84.svg" />是不对易关系，因此，不能同时确定<img alt="img" src="https://cdn.nlark.com/yuque/__latex/995a45a18bb7c8c121acf1fe2ab94292.svg" />和<img alt="img" src="https://cdn.nlark.com/yuque/__latex/49c32d7b080baf5edf584c8aaa0cfe84.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734837267949-285707e2-cb01-4fa9-8754-bf07bf94df1d.png" /></p>
+<ol>
+<li>
+<p>确定<img alt="img" src="https://cdn.nlark.com/yuque/__latex/6945e109777fe3fd777e8254f0ec0f0c.svg" />之后，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/990c6d5dded56753df423ac245acaea6.svg" />取极大值，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/49c32d7b080baf5edf584c8aaa0cfe84.svg" />仍然有一定大小</p>
+</li>
+<li>
+<p>回到之前对经典体系中角动量的讨论</p>
+</li>
+</ol>
+<p>​        <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734837646343-526f02b6-da7d-4707-aa76-1c4acd1db027.png" /></p>
+<p>​    <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734837767629-332b6ca8-0b4f-4458-9aec-adec68434e0f.png" /></p>
+<ol>
+<li>
+<p>下面我们可以对<img alt="img" src="https://cdn.nlark.com/yuque/__latex/c3947c25be5aa73c88b98a853083f52e.svg" />进行讨论，</p>
+</li>
+<li>
+<p>方向:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e28fa69408a9159f54270f24f80e4966.svg" />,因此，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/5f0ad5b4090f0f47468b28f58485f189.svg" />, 做Lamor静动（陀螺）</p>
+</li>
+<li>角速度(拉莫进动)</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734838135144-89f594d2-5bac-477a-9903-3e4cc2fabc52.png" /></p>
+<p>​              <img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1734838290216-4a1aa023-cbca-4865-9a8e-9f13cb620060.jpeg" /></p>
+<ol>
+<li>
+<p>在量子力学中，我们倾向从能量角度理解</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/68799e3650895d178becaf92683667d1.svg" /></p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/d5bed65d73abbfc784eeac26d2943e2f.svg" />, <img alt="img" src="https://cdn.nlark.com/yuque/__latex/4733138a72685dde9e172e5ac2faeaa1.svg" />同向（<img alt="img" src="https://cdn.nlark.com/yuque/__latex/21f1cc74635cf48c2184ffe65c170d5f.svg" />反向)，能量最低，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/522aa39116a7c44c8100e6f7686cb2b2.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/4733138a72685dde9e172e5ac2faeaa1.svg" />反向(<img alt="img" src="https://cdn.nlark.com/yuque/__latex/21f1cc74635cf48c2184ffe65c170d5f.svg" />同向)，能量最高.</li>
+<li>
+<p>能量是不连续的，因为磁量子数决定<img alt="img" src="https://cdn.nlark.com/yuque/__latex/995a45a18bb7c8c121acf1fe2ab94292.svg" /></p>
+</li>
+<li>
+<p>银原子的磁矩只能取两个离散方向，原因在于：</p>
+</li>
+<li>
+<p>电子自旋角动量的量子化，导致自旋的 z方向分量  只能取 ±ℏ</p>
+</li>
+<li>
+<p>磁矩由自旋角动量决定，其 z方向分量只能对应于两个离散值 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/697edd8f6977f57cb5ace90a329699ad.svg" /></p>
+</li>
+<li>
+<p>塞曼劈列</p>
+</li>
+<li>
+<p>在无外磁场的情况下，原子的能级通常是简并的，即多个量子态具有相同的能量。</p>
+</li>
+<li>
+<p>当施加外磁场时，由于磁场与原子中的轨道角动量和自旋角动量之间的相互作用，这种简并会被打破，导致能级分裂。</p>
+</li>
+<li>
+<p>为什么我们要研究<img alt="img" src="https://cdn.nlark.com/yuque/__latex/6f0d5141d616da6c6c161a24ab8d32c3.svg" /></p>
+</li>
+<li>
+<p>为了方便，实验时一般使磁场B与z轴平行</p>
+</li>
+<li>量子力学的可观测性：<img alt="img" src="https://cdn.nlark.com/yuque/__latex/940404645225f109abf6d342fbe0c586.svg" />与<img alt="img" src="https://cdn.nlark.com/yuque/__latex/7cbc28871abf1095de38e4b2048cb9ec.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/258c494bb734a33784e615baafe4371f.svg" />对易，因此不能同时确定<img alt="img" src="https://cdn.nlark.com/yuque/__latex/940404645225f109abf6d342fbe0c586.svg" />与<img alt="img" src="https://cdn.nlark.com/yuque/__latex/7cbc28871abf1095de38e4b2048cb9ec.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/258c494bb734a33784e615baafe4371f.svg" /></li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/6f0d5141d616da6c6c161a24ab8d32c3.svg" />与磁量子数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/990c6d5dded56753df423ac245acaea6.svg" />相关，便于观测。（磁矩量子化）</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a078b996fbfc4d9089bea60ea24c5c0e.svg" />与磁量子数有关，（能量量子化）</li>
+</ol>
+<h3 id="spin-angular-momentum">Spin Angular Momentum<a class="headerlink" href="#spin-angular-momentum" title="Permanent link">&para;</a></h3>
+<p>斯特恩-盖拉赫实验（Stern-Gerlach Experiment）  </p>
+<ol>
+<li>
+<p><strong>实验背景</strong></p>
+</li>
+<li>
+<p>斯特恩-盖拉赫实验由 <strong>Otto Stern</strong> 和 <strong>Walther Gerlach</strong> 在 1922 年完成。</p>
+</li>
+<li>
+<p>实验的目标是验证角动量量子化的概念</p>
+</li>
+<li>
+<p><strong>实验装置</strong></p>
+</li>
+<li>
+<p>让银原子束通过不均匀的磁场，由于原子的磁矩取向不同，在磁场梯度内收到不同大小和方向的力而产生的偏转也不同，最后淀积载接收板上的不同位置</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735560219512-7a833f2c-b0ea-41e8-83b1-23a2a3de85c3.png" /></p>
+<ol>
+<li>在电炉O内使银蒸发，银原子通过狭缝<img alt="img" src="https://cdn.nlark.com/yuque/__latex/700a163a8520af14cdb8f48a449a1c4a.svg" />和<img alt="img" src="https://cdn.nlark.com/yuque/__latex/31e54acaa694fa376373a84973c42213.svg" />形成细束，经过不对成的刃-槽形刺激产生的不均匀磁场区域，最后撞在玻璃板P上形成淀积物分布</li>
+<li>
+<p>银原子束所通过的整个区域被抽成真空</p>
+</li>
+<li>
+<p><strong>理论推导</strong></p>
+</li>
+<li>
+<p>设磁场及其梯度的方向为z，一个具有磁矩<img alt="img" src="https://cdn.nlark.com/yuque/__latex/756a643380ff53c0692dbc2e7e930a35.svg" />的原子的磁场梯度中感受到如下的力<img alt="img" src="https://cdn.nlark.com/yuque/__latex/faeb5a9880a62f5cac2fb5df2e54b172.svg" /></p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/6f0d5141d616da6c6c161a24ab8d32c3.svg" />是磁矩的z分量，设原子通过磁场区域的纵向距离</li>
+</ol>
+<p><strong>4.    实验结果与意义</strong></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734845033372-556d379c-8a6d-4d63-b983-7f387de63aa0.png" /></p>
+<ol>
+<li>
+<p><strong>经典物理的预测</strong>：</p>
+</li>
+<li>
+<p>如果磁矩是经典矢量，其 z方向分量 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/6f0d5141d616da6c6c161a24ab8d32c3.svg" /> 应该可以在 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/aba6fd34ce8ae5d0ea05788c11a8db43.svg" /> 到 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/6483e6a1981ab8875aafb862eb199948.svg" /> 的范围内连续变化。</p>
+</li>
+<li>
+<p>在探测板上应该观察到一个连续的分布，且在中心处强度最大。</p>
+</li>
+<li>
+<p><strong>实际观察结果</strong>：</p>
+</li>
+<li>
+<p>实验中观察到两个离散的斑点，表明磁矩的 zzz-方向分量是量子化的，只能取两个离散值： <img alt="img" src="https://cdn.nlark.com/yuque/__latex/2372dc7d9bbf6156d60487652635fe0b.svg" /></p>
+</li>
+<li>
+<p>这与经典物理的预测不符，验证了量子力学的正确性。</p>
+</li>
+<li>
+<p><strong>关键发现</strong>：</p>
+</li>
+<li>
+<p>磁矩的 z方向分量量子化。</p>
+</li>
+<li>自旋角动量 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/710c2cfe451c6af4368bf79a2e8cd90b.svg" /> 的取值为 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/dab5c89101979509976be0d01fafb1dc.svg" />，对应于电子自旋量子数 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/07f5d2096662776d6b8b06c428c3a625.svg" />。</li>
+<li>直接证明了角动量分量的量子化特性。</li>
+</ol>
+<p><strong>自旋(Spin)</strong></p>
+<p>为了更好的解决以上问题，引入自旋的概念</p>
+<ol>
+<li>
+<p>磁矩的产生</p>
+</li>
+<li>
+<p>轨道角动量:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/bc5699ca77e52e6e9ba8aa31d8f555fb.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/3f4698e96ecc94933e061abadd5a446c.svg" /></p>
+</li>
+<li>
+<p>自旋角动量:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/828ee31ad098b205439cf63d8148166f.svg" /></p>
+</li>
+<li>
+<p>其中:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/55fc237afbe535f7d8434985b848a6a7.svg" />是自旋角动量矢量</p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/01843f618c317d4eaf330d315abe9c23.svg" /> 是电子的自旋<img alt="img" src="https://cdn.nlark.com/yuque/__latex/998a8b823ada1fbe23361da7260daf66.svg" />因子，约为2.002</li>
+<li>
+<p>因此，自旋角动量大概是轨道角动量的3倍.</p>
+</li>
+<li>
+<p>其他</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734846597811-f4b946cf-f312-4f6c-8c3d-ec40488e3c2f.png" /></p>
+<ol>
+<li>
+<p>新量子理论</p>
+</li>
+<li>
+<p>背景： 根据新量子理论，对于轨道角动量量子数 l=1，磁量子数 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/990c6d5dded56753df423ac245acaea6.svg" />可以取 −1,0,+1-1, 0, +1−1,0,+1，因此银原子束应在斯特恩-盖拉赫实验中分裂为<strong>三个斑点</strong>。  </p>
+</li>
+<li>
+<p>银原子的结构 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/2e772e52841d8b8b0a60c608755a4c9e.svg" /></p>
+</li>
+<li>
+<p>最外层的 5s 电子是单独未配对的电子。  </p>
+</li>
+<li>4d 轨道上的电子由于成对排列，其磁矩相互抵消。  </li>
+<li>银原子的磁性完全由这个单独的 5s 电子决定。   由于 5s 电子的轨道量子数l=0，其轨道角动量为零，这说明银原子的磁矩不可能来自轨道运动。  </li>
+<li>
+<p>实验结果显示银原子束分裂为两个斑点，而不是三个。这与新量子理论预测的 三个斑点矛盾。</p>
+</li>
+<li>
+<p>问题解决</p>
+</li>
+<li>
+<p><strong>电子具有一种内禀的角动量</strong>，称为<strong>自旋</strong>（spin），它与轨道运动无关</p>
+</li>
+<li>电子的自旋量子数 s=1/2，对应的自旋磁量子数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/106e5d047262e70288ee14aadd4f7384.svg" />可取 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/8fa3dd1bc65a472d33160ca2c565f672.svg" /></li>
+<li>自旋的 z-方向分量导致银原子束在磁场中分裂为两个斑点。</li>
+<li>
+<p>自旋磁矩与轨道磁矩类似，其 z方向分量为：</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/5fe67462c4e2da48995e1fa675b1bd89.svg" /></p>
+</li>
+<li>
+<p>自旋角动量和轨道角动量算子具有相似的形似</p>
+</li>
+<li>
+<p>自旋角动量的定义</p>
+</li>
+<li>
+<p>自旋角动量 <img alt="img" src="https://cdn.nlark.com/yuque/__latex/caa155ea83d60415360155e5e6a7198b.svg" />满足角动量的量子化规则：  <img alt="img" src="https://cdn.nlark.com/yuque/__latex/ef6b8a74efb9ef85093c5f9a85ed3eb0.svg" /></p>
+</li>
+<li>分量:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/37d075f2df50b7a5d80bcb6fd8e98021.svg" />,对电子<img alt="img" src="https://cdn.nlark.com/yuque/__latex/41b858a69db5986b498face1d43809ef.svg" /></li>
+<li>
+<p>对易关系：类比<img alt="img" src="https://cdn.nlark.com/yuque/__latex/7cbc28871abf1095de38e4b2048cb9ec.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/598bcf5723a11b9af757bb0fe5e60519.svg" /><img alt="img" src="https://cdn.nlark.com/yuque/__latex/940404645225f109abf6d342fbe0c586.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/eea96964f10ef657c12ff3116e620e06.svg" /></p>
+</li>
+<li>
+<p>自旋量子数（总量子数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/79ce3c7a71877c2ff01695e38ade43ca.svg" />）:是一个与粒子种类有关的物理量。</p>
+</li>
+<li>
+<p>不同粒子类型的自旋量子数<img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1734846674528-f87cf419-36c8-42cc-a4bf-91324709ff99.png" /></p>
+</li>
+<li>
+<p>费米子与玻色子的区别</p>
+</li>
+<li>
+<p>Fermon:<img alt="img" src="https://cdn.nlark.com/yuque/__latex/647af5c436bfe021498368d94343431c.svg" /></p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/54c945963424e916b6bf53af4118d2f7.svg" /> </p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/7c9159ae1039967868e6b88944fa4eca.svg" />偶宇称</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/3f5853986c4ca82aea6210af0e5c9dd2.svg" />，奇宇称</p>
+</li>
+<li>
+<p>Boson: <img alt="img" src="https://cdn.nlark.com/yuque/__latex/fa4cc3561d35b81d91712218560bb0cb.svg" /></p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/2f1ede818735de8523e7ce4ecaa377b1.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/3717cb7bc1e9dee81501b5082629a8bf.svg" /></li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/2b483f39f609fca6e0d11a265811b78d.svg" /></p>
+</li>
+<li>
+<p>磁量子数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/106e5d047262e70288ee14aadd4f7384.svg" />:由总量子数决定。</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/1b415c293d1d8942ccfc692d534cdea8.svg" /></p>
+</li>
+</ol>
+<h3 id="magnetic-resonance-spin-orbit-coupling">Magnetic Resonance Spin-Orbit Coupling<a class="headerlink" href="#magnetic-resonance-spin-orbit-coupling" title="Permanent link">&para;</a></h3>
+<p>Nuclear Spin(核自旋)</p>
+<p>电子： <img alt="img" src="https://cdn.nlark.com/yuque/__latex/14e480ad77d4225cfbe0433e8f755f10.svg" /> 波尔磁矩<img alt="img" src="https://cdn.nlark.com/yuque/__latex/910830fad68ba13a3802f875880fc950.svg" /></p>
+<p>质子: <img alt="img" src="https://cdn.nlark.com/yuque/__latex/2214f9df08af7d92ba2bd8b2c0023964.svg" />             <img alt="img" src="https://cdn.nlark.com/yuque/__latex/3d4277fc6a18f03ef3234fd263016934.svg" /></p>
+<ol>
+<li>不光电子有自旋，原子核也有自旋(比如氢原子核)</li>
+<li>在磁场中<img alt="img" src="https://cdn.nlark.com/yuque/__latex/392e2d16dea075059d3e43874d255d4d.svg" />。</li>
+</ol>
+<h2 id="supplement">Supplement<a class="headerlink" href="#supplement" title="Permanent link">&para;</a></h2>
+<h3 id="_3">态矢和态矢空间<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>光的偏振学说</strong></p>
+</blockquote>
+<p>线偏振光</p>
+<ol>
+<li>马吕斯定律告诉我们:如果两偏振片透振方向之间的夹角为<img alt="img" src="https://cdn.nlark.com/yuque/__latex/ed5a4aa5e092e303a69c608582c70db9.svg" />,则通过P1和P2的光强比为<img alt="img" src="https://cdn.nlark.com/yuque/__latex/ce34b627eefc5e5ff3ba2e513de1b20e.svg" />,这可以用光的分解来解释</li>
+<li>但是如果从量子角度，考虑通过P1的一个光子，它要么全部通过P2,要么全部被P2吸收，不会部分通过，部分吸收，我们用概率幅来表示光子通过P2的概率</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/5ff9d5aca7e6371ab53fd2ab10c6544e.svg" />其中<img alt="img" src="https://cdn.nlark.com/yuque/__latex/5af32f832776ee9b543ba10af15b75a3.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/1c42acec40acd4549835520741b102a5.svg" />分别表示偏振态沿<img alt="img" src="https://cdn.nlark.com/yuque/__latex/6fb46cf1d0e4ae6b91519b03fb5ee79d.svg" />方向的光子分解到沿<img alt="img" src="https://cdn.nlark.com/yuque/__latex/5963837d99a8fcf1d9c5f7807a096f47.svg" />方向偏振态的概率幅</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/fd4e5208e12e62a6cd1ed4d9801fbf3a.svg" />分别是偏振态沿<img alt="img" src="https://cdn.nlark.com/yuque/__latex/5963837d99a8fcf1d9c5f7807a096f47.svg" />方向的光子分解到沿<img alt="img" src="https://cdn.nlark.com/yuque/__latex/59d3bc7a973cc83b04835b82a137c013.svg" />方向偏振态的概率幅。</p>
+<p>首先将偏振态沿P1方向的光子分解到偏振态沿x,y方向，之后再将沿x,y方向的偏振态分解到沿P2方向的偏振态上.</p>
+<p>在这个例子，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/59d3bc7a973cc83b04835b82a137c013.svg" />沿着x方向，因此<img alt="img" src="https://cdn.nlark.com/yuque/__latex/f23eb61c78c5f2b5155dd257c6ec2f16.svg" /><img alt="img" src="https://cdn.nlark.com/yuque/__latex/3ce861947dc318d382ca583355aa7173.svg" /></p>
+<ol>
+<li>P1的概率幅可以表示为<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0b3b740fc5094f53054098bb2d5a69bf.svg" />,因此P1再x,y上的分解为</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735543370981-7bea6e08-35d2-46c8-805d-1d55b2d69cdf.png" /></p>
+<p>​   这里的共同项因子<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0b3b740fc5094f53054098bb2d5a69bf.svg" />是无关紧要的，可以不写，因此</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735543420703-a3b64987-2ac6-4aee-8742-73c09894e886.png" /></p>
+<ol>
+<li>光子通过P2的概率为<img alt="img" src="https://cdn.nlark.com/yuque/__latex/18006ee9ce749ef548c3326062e0c61e.svg" /></li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735543508759-fb968c14-7469-4b2f-901b-9e67e7dfc43a.png" /></p>
+<p>圆偏振光</p>
+<ol>
+<li>圆偏振光的分解</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/1c3dc46045e4731c6eb920e75ff1164c.svg" /></p>
+<ol>
+<li>圆偏振光和线偏振光的转化</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1735544388231-c4b16e66-4d51-4390-bf21-d977f30db73e.jpeg" /></p>
+<p>圆偏振光可以分解成振幅相等，相位差为90°的两线偏振光的叠加。</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/6f786e68283b14abc95215f535d25413.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/e9a3fcf4e8b06a48353d735d25f2af65.svg" /></p>
+<p>如果忽略结合因子<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0b3b740fc5094f53054098bb2d5a69bf.svg" /></p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/e599a6460a3d753324e46eae5d131953.svg" /></p>
+<ol>
+<li>引入态矢和态矢空间</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/bbf1e5753ad0c20ba5242bfe468158ad.svg" /></p>
+<p>a. 可以略去偏振态<img alt="img" src="https://cdn.nlark.com/yuque/__latex/06a88c61181eaebe2bd5f0f979e0af42.svg" />.<img alt="img" src="https://cdn.nlark.com/yuque/__latex/a4254e2c30b75094b9ccabd5bda217a4.svg" />不写</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735544601578-7f838d63-f2d7-466c-82f2-55fba63643bb.png" /></p>
+<p>出现了半边符号的含义，它们代表什么意思?</p>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735544725102-7025bcb8-08df-460a-969d-6582e99bcb8a.png" /></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/49933255/1735545008514-9737f5f4-92f6-4eec-8d56-4ba4843995d8.jpeg" alt="img" style="zoom: 67%;" /> </p>
+<ol>
+<li>态矢的定义</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/3fb169b6c59f30ce580b7fd45be03186.svg" />被拆分成左右两半，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/f51641f2b31a35c48e2d52177aadf9a6.svg" />被称为左矢,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/7ef488307f905151aaaa9ed090eacac4.svg" />被称为右矢，</p>
+<p>a. 左右矢都代表微观系统的量子状态，统称态矢。左矢和右矢都相当于矢量<img alt="img" src="https://cdn.nlark.com/yuque/__latex/7aaf2781990aa336d909f7ebd32e2f69.svg" />本身，是与态基德选择无关德</p>
+<p>b. 坐标架上的基矢<img alt="img" src="https://cdn.nlark.com/yuque/__latex/caad0c905f96de91b835af67a2c13c09.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0ab8595969855736ef8d92991dcc7962.svg" />称为态基</p>
+<ol>
+<li>
+<p>对偶空间中态矢的内积<img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735545336326-df491d1b-0e32-456e-8b78-ae0e7a97f93a.png" /></p>
+</li>
+<li>
+<p>满足正交归一性</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735545458438-8656ea76-ab43-4581-85b5-4baaacabdcdd.png" /></p>
+<ol>
+<li>正交归一性的应用</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735545569008-86f586bd-dbd7-462b-b2bd-210f2068e02a.png" /></p>
+<ol>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/a84e7415be098f1d2ef4748822134ea5.svg" />（具有正定性）</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735545591073-98dadf89-5502-4afd-accf-4225f75be943.png" /></p>
+<ol>
+<li>
+<p>内积的物理意义</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/__latex/0f144f5e913c1ab4cf7c06079ff7793f.svg" />是处于<img alt="img" src="https://cdn.nlark.com/yuque/__latex/738ba1e553b4d43c6b614739333819a2.svg" />的量子系统处在<img alt="img" src="https://cdn.nlark.com/yuque/__latex/3c365a2a9f8c91d3c0c14c8a9d4ce144.svg" />态的概率幅，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/549ba235fddab6aab83e0f9e9cb8a78f.svg" />为该量子系统处在<img alt="img" src="https://cdn.nlark.com/yuque/__latex/73bc9ddb322193086fbf279716759004.svg" />态的概率</p>
+</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/__latex/dec4284e16ce8e492b7052fa709109fe.svg" />等于量子处于所有基矢状态的概率之和。态矢应该满足如下的归一化条件<img alt="img" src="https://cdn.nlark.com/yuque/__latex/c7973ff3432b1daff42108d039479a54.svg" /></li>
+<li>
+<p>薛定谔方程<img alt="img" src="https://cdn.nlark.com/yuque/__latex/26c8519c948e15212a2a6c75696de514.svg" /> </p>
+</li>
+<li>
+<p>与之对应的共轭形式为<img alt="img" src="https://cdn.nlark.com/yuque/__latex/150073e71199b0393d3754f73b179a63.svg" /></p>
+</li>
+<li>其中<img alt="img" src="https://cdn.nlark.com/yuque/__latex/06be65935e5121bf3623954fb39b0a12.svg" />是<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8149d9e4525292fe343b930fd9683f9b.svg" />的厄米共轭，厄米共轭等于自己的算符叫做厄米算符(<img alt="img" src="https://cdn.nlark.com/yuque/__latex/70ec5394bc54b87d4b4c6534732cf18c.svg" />)</li>
+<li>
+<p>因此一切动力学变量对应的算符都是厄米算符</p>
+</li>
+<li>
+<p>圆偏振态矢的展开</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735548354437-6f7af20b-dcd2-42cd-9025-a5b58ea72170.png" /></p>
+</li>
+<li>琼斯向量<img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735548188998-3c980790-2103-416a-ab69-d0d09fd3cc19.png" /></li>
+<li>态基<img alt="img" src="https://cdn.nlark.com/yuque/__latex/49bbb1a790a2436efae5c9a09fc729a4.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/72fafba89ae073187253209466f192c4.svg" />是正交归一的，态基<img alt="img" src="https://cdn.nlark.com/yuque/__latex/30114a46f396ed529034f9e2528739b1.svg" />,<img alt="img" src="https://cdn.nlark.com/yuque/__latex/809b6e6d9f532cb497b17113ab2bfec0.svg" />也是正交归一的</li>
+<li><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735548484664-33e9c73a-4a84-4e89-bfac-4158aba8b5b9.png" /></li>
+</ol>
+<h2 id="_4"><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">动力学变量的测量与平均值<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>量子力学的一个基本假设是:<strong>对某个变量进行测量时，每次得到的数值只能是它的某个本征值。</strong></p>
+</li>
+<li>
+<p>因此，如果待测系统所处的量子态不属于待测量A的本征态，则应将它按A的正交归一本征矢展开</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735549867179-9b78ae24-eb39-4eb0-a5cb-90fbf4b54639.png" /></p>
+</li>
+<li>
+<p>各次测量以一定概率分布得到不同的本征值，对同样的系统进行多次测量的结果，得到的本征值为</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735549953707-a19a6e33-c95f-4dca-be89-49f526514f4b.png" /></p>
+<p>上述结果表明，在个别测量中出现本征值<img alt="img" src="https://cdn.nlark.com/yuque/__latex/5d496a3b872073b90e3b920cacfc3dc6.svg" />的概率为概率幅的模方<img alt="img" src="https://cdn.nlark.com/yuque/__latex/802c1504701b3cd3c26881e7b770be05.svg" /></p>
+<ol>
+<li>
+<p>量子力学的另一个假设为:测量后被测的量子态立刻塌缩到相应的本征态</p>
+</li>
+<li>
+<p>如果一个原子的角动量处在角量子数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/07c5cdce80974fe7e34a548b07c1396f.svg" />而磁量子数<img alt="img" src="https://cdn.nlark.com/yuque/__latex/44bc1582164a930740b6bfaa3b15ef55.svg" />各<img alt="img" src="https://cdn.nlark.com/yuque/__latex/94c831798875e0256b35864133b2ee56.svg" />的量子态，即<img alt="img" src="https://cdn.nlark.com/yuque/__latex/9f7f93366db234be6035d8cc4af69ce0.svg" /></p>
+</li>
+<li>对它进行第一次测量时，我们得到<img alt="img" src="https://cdn.nlark.com/yuque/__latex/44bc1582164a930740b6bfaa3b15ef55.svg" />的三者之一</li>
+<li>测量会影响塌缩，进而影响概率</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735557443427-8286435c-edd4-4642-9936-ed5551ef41c6.png" /></p>
+<h3 id="_6">守恒量<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>因为态矢随时间变化，一个动力学变量<img alt="img" src="https://cdn.nlark.com/yuque/__latex/885c2caa3864767c99dface5b85e7df5.svg" />的平均值<img alt="img" src="https://cdn.nlark.com/yuque/__latex/9180aa4ac382dbdc357375aaec8f439d.svg" />也随时间变化。</p>
+</li>
+<li>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735557546883-e51b0893-9707-4dd3-9f54-2324813f4ad3.png" /></p>
+</li>
+<li>可以看出，结果含有<img alt="img" src="https://cdn.nlark.com/yuque/__latex/ae09931850a3a53ef794ee41f4ed5cd3.svg" />如果算符<img alt="img" src="https://cdn.nlark.com/yuque/__latex/885c2caa3864767c99dface5b85e7df5.svg" />与哈密顿算符<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8149d9e4525292fe343b930fd9683f9b.svg" />对易，则它在任何量子态中的平均值都不随时间变化。</li>
+<li>
+<p>即<img alt="img" src="https://cdn.nlark.com/yuque/__latex/0433d82263f4a7400e7e87a5e1790553.svg" /></p>
+</li>
+<li>
+<p>因此，判断一个物理量是不是守恒量的方式是看它和<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8149d9e4525292fe343b930fd9683f9b.svg" />是否对易</p>
+</li>
+</ol>
+<p><img alt="img" src="https://cdn.nlark.com/yuque/0/2024/png/49933255/1735557719263-9603fe85-ef6c-4e76-9d5c-344f3e7169ef.png" /></p>
+<p>对易算符的共同本征态与动力学变量的完全集问题</p>
+<ol>
+<li>相互对易算符具有共同的本征态</li>
+<li>轨道角动量的模方<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e52ffd0a631d3279afdb0c0f58bd7caa.svg" />与任何一个分量<img alt="img" src="https://cdn.nlark.com/yuque/__latex/70b3c6f58cdf080691de0b1838702a66.svg" />都是对易的，它们有共同的本征态</li>
+<li>算子<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e52ffd0a631d3279afdb0c0f58bd7caa.svg" />角量子数为l的本征态有<img alt="img" src="https://cdn.nlark.com/yuque/__latex/1c5ab22fc73dbac2bc9cb5b2c86f822e.svg" />个，它们分别对应算符<img alt="img" src="https://cdn.nlark.com/yuque/__latex/70b3c6f58cdf080691de0b1838702a66.svg" />的<img alt="img" src="https://cdn.nlark.com/yuque/__latex/1c5ab22fc73dbac2bc9cb5b2c86f822e.svg" />个本征值。</li>
+<li>
+<p>中心场情形(如氢原子)的哈密顿算符<img alt="img" src="https://cdn.nlark.com/yuque/__latex/8149d9e4525292fe343b930fd9683f9b.svg" />与<img alt="img" src="https://cdn.nlark.com/yuque/__latex/e52ffd0a631d3279afdb0c0f58bd7caa.svg" />，<img alt="img" src="https://cdn.nlark.com/yuque/__latex/70b3c6f58cdf080691de0b1838702a66.svg" />都对易，它的一个本征值<img alt="img" src="https://cdn.nlark.com/yuque/__latex/940569f90e6071d40d40e631b01563fe.svg" />有角量子数分别为<img alt="img" src="https://cdn.nlark.com/yuque/__latex/4e02184070e5c5cb461769dfadcf21ec.svg" />的n个本征态。没给<span class="arithmatex">\(l\)</span>还有<span class="arithmatex">\(2l+1\)</span>个磁量子数,的不同本征态，因此对于给定的n，共有<img alt="img" src="https://cdn.nlark.com/yuque/__latex/b67c3aca1bcc34aec861fef4fbf09535.svg" />个本征态。</p>
+</li>
+<li>
+<p><strong>一个本征值可以对应多个本征态（多个基）</strong></p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        此页面有帮助吗？
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              谢谢你的反馈！
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/wcowin_" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/yufeila" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<17786321727@163.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>我们也使用 cookies 来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们想要的东西。 如果你同意，你可以帮助我们让我们的网站更好。</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">同意</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">管理设定</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../../themes/js/custom.js"></script>
+      
+        <script src="../../themes/js/simpleLightbox.min.js"></script>
+      
+        <script src="../../themes/js/optionalConfig.js"></script>
+      
+        <script src="../../themes/js/mermaidloader.js"></script>
+      
+        <script src="../../themes/js/umlconvert.js"></script>
+      
+        <script src="../../themes/js/mathjax.js"></script>
+      
+        <script src="../../themes/js/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.17.1/flowchart.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/@mermaid-js/mermaid-mindmap@9.3.0/dist/diagram-definition.0faef4c2.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/markdown-it-plantuml@1.4.1/index.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml-full.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-svg-full.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

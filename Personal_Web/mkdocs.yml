@@ -3,19 +3,41 @@ site_name: My Docs
 theme:
   name: material
   palette:
-    scheme: slate
-  features:
-    - navigation.tabs
-    - navigation.social
+    primary: indigo #顶部颜色
+  palette:
+    - scheme: default  # 日间模式
+      primary: indigo  # 主色调
+      accent: cyan  # 高亮色
+      toggle:
+        icon: material/weather-night  # 夜间模式图标
+        name: 切换至夜间模式  # 鼠标悬浮提示
+    - scheme: slate  # 夜间模式
+      primary: black  # 主色调
+      accent: cyan  # 高亮色
+      toggle:
+        icon: material/weather-sunny  # 日间模式图标
+        name: 切换至日间模式  # 鼠标悬浮提示
+        
+  features: 
+    - navigation.instant #- header.autohide  #自动隐藏
+    #- announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - search.share #搜索分享按钮
+  language: zh # 一些提示性的文字会变成中文
 
-plugins:
-  - search
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/JiepengLab/notebook
-
+  icon: 
+    repo: fontawesome/brands/git-alt #右上角图标
+edit_uri: edit/main/docs # 编辑按钮跳转的链接 
+repo_url: https://github.com/yufeila/mymkdocs # 右上角点击跳转的链接
+repo_name: yufeila.github.io # 右上角的名字
 
 nav:
 - Home: index.md
@@ -29,3 +51,107 @@ nav:
     - 电子电路基础: 
           - 电子电路基础回忆卷整理 : ISEE/电子电路基础/电子电路基础回忆卷整理.md
           - 回忆卷题目分析 : ISEE/电子电路基础/试题分析.md
+- Physics:
+    - 量子力学 : Physics/量子力学.md 
+- Math:
+    - 概率论与数理统计:
+          - 概率论与数理统计习题集 : math/概率论与数理统计/概率论与数理统计.md
+- 通识:
+    - 茶文化与茶健康 : Common/茶文化与茶健康.md
+
+extra:
+  generator: false  #删除页脚显示“使用 MkDocs 材料制造”
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/wcowin_
+    - icon: fontawesome/brands/github
+      link: https://github.com/yufeila
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<17786321727@163.com> #联系方式
+
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # 你的 Google Analytics ID
+
+    feedback:
+      title: 此页面有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            谢谢你的反馈！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+
+  consent:
+    title: Cookie consent
+    description: >-
+      我们也使用 cookies 来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们想要的东西。
+      如果你同意，你可以帮助我们让我们的网站更好。
+
+
+plugins:
+  - search
+  - tags:
+      tags_file: tag.md #标签
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - pymdownx.arithmatex:  # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      # linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences # 代码块高亮插件
+  - meta # 支持Markdown文件上方自定义标题标签等
+
+extra_css:
+- themes/css/custom.css
+- themes/css/simpleLightbox.min.css
+- themes/css/pied_piper.css
+- https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+ 
+extra_javascript:
+- themes/js/custom.js
+- themes/js/simpleLightbox.min.js
+- themes/js/optionalConfig.js
+- themes/js/mermaidloader.js
+- themes/js/umlconvert.js
+- themes/js/mathjax.js
+- themes/js/katex.js
+- https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
+- https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.17.1/flowchart.min.js
+- https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js
+- https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js
+- https://cdn.jsdelivr.net/npm/@mermaid-js/mermaid-mindmap@9.3.0/dist/diagram-definition.0faef4c2.min.js
+- https://cdn.jsdelivr.net/npm/markdown-it-plantuml@1.4.1/index.min.js
+- https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js
+- https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+- https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml.js
+- https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml-full.js
+- https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-svg-full.js
+- https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
+- https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
